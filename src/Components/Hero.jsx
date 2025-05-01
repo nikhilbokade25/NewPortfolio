@@ -1,51 +1,84 @@
-import './Hero.css';
-import React, { useEffect, useRef } from 'react';
 import TypewriterComponent from 'typewriter-effect';
-import { gsap } from 'gsap';
+import './Hero.css';
+import { useEffect } from 'react';
+import { gsap } from 'gsap'; // Import GSAP for animation
+import { useRef } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Hero() {
-    const heroMainRef = useRef(null);
+  const heroMainRef = useRef(null);
+  const navRef = useRef();
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            gsap.to(heroMainRef.current, {
-                y: 0,
-                duration: 1,
-                ease: "power3.in",
-            });
-        }, 10000); 
+  const showNavbar = () => {
+    navRef.current.classList.toggle('responsive_nav');
+  };
 
-        return () => clearTimeout(timer);
-    }, []);
+  useEffect(() => {
+    gsap.fromTo(
+      heroMainRef.current,
+      { y: '100%', opacity: 0 }, // Start from below the screen with 0 opacity
+      { y: '0%', opacity: 1, duration: 1, ease: 'power3.out', delay: 1 } // Slide up with fade-in
+    );
+  }, []);
 
-    return (
-        <div className='hero_container'>
-            <div className='hero_intro'>
-                <h1 className="hero_text">
-                    Looking for a&nbsp;
-                    <span className="typewriter_text">
-                        <TypewriterComponent 
-                            options={{
-                                strings: [
-                                    'Front-End Developer ?',
-                                    'React Enthusiast ?',
-                                    'UI/UX Lover ?',
-                                    'Problem Solver ?',
-                                ],
-                                autoStart: true,
-                                loop: true,
-                                cursor: '',
-                                delay: 35, /*animation speed*/
-                                deleteSpeed: 35,
-                            }}
-                        />
-                    </span>
-                </h1>
+  return (
+    <div className="hero_container">
+      <div className="hero_intro">
+        <span className="static_text">Looking for a </span>
+        <TypewriterComponent
+          options={{
+            strings: [
+              'FRONT-END DEVELOPER ?',
+              'REACT ENTHUSIAST ?',
+              'UI/UX LOVER ?',
+              'PROBLEM SOLVER ?',
+            ],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </div>
+
+      <div className="hero_main" ref={heroMainRef}>
+        
+        <header>
+          <h3>NIKHIL BOKADE</h3>
+          <nav ref={navRef}>
+            <a href="/#">MY WORK</a>
+            <a href="/#">ABOUT ME</a>
+            <a href="/#">CONTACT</a>
+            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+              <FaTimes />
+            </button>
+          </nav>
+          <button className="nav-btn" onClick={showNavbar}>
+            <FaBars />
+          </button>
+        </header>
+
+        <div className='hero_content'>
+            <div className='hero_heading_1'>
+                <h1>Hi ! I'm Nikhil Bokade 👋🏼</h1>
             </div>
 
-            <div className='hero_main' ref={heroMainRef}>
-                <h2>Welcome to my Portfolio!</h2>
+            <div className='hero_heading_2'>
+                <h1>FRONT-END DEVELOPER</h1>
+            </div>
+
+            <div className='hero_heading_3'>
+                <h1><span className='heading_3_font'>based in</span> CANADA</h1>
+            </div>
+
+            <div className='hero_heading_4'>
+                <p>
+                2 years of shaping bold, user-first designs in high-impact consulting environments.
+                I blend sharp visual design with UX strategy to drive real business results.
+                Focused, fast, and fearless when it comes to creating standout digital experiences.
+                </p>
             </div>
         </div>
-    );
+
+      </div>
+    </div>
+  );
 }
