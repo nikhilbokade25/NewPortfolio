@@ -48,7 +48,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: white; */
     color: #fdc103;
     transition: all 1s ease-in-out; 
   }
@@ -67,7 +66,6 @@
   }
   
 
-  
   header {
     display: flex;
     align-items: center;
@@ -79,12 +77,14 @@
     left: 0;
     width: 100%; 
     z-index: 3; 
+  
   }
 
   header h3 {
     margin: 0;
     font-size: 1.8rem;
     white-space: nowrap;
+    color: black;
   }
 
   nav {
@@ -97,6 +97,8 @@
   nav a {
     margin: 0 1rem;
     text-decoration: none;
+    color: black;
+    font-weight: bold;
   }
   
   nav a:hover {
@@ -136,6 +138,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero_heading_1 h1{
+    font-size: 35px;
 }
 
 .hero_heading_2{
@@ -202,21 +208,29 @@
       justify-content: center;
       gap: 1.5rem;
       transition: 1s;
+      background-color: #f3efe5; 
     }
   
     header .responsive_nav {
       transform: translateY(100vh);
     }
 
+    .nav-btn{
+        color: black;
+    }
+
   
     nav .nav-close-btn {
       position: absolute;
-      top: 2rem;
+      top: 1rem;
       right: 2rem;
     }
   
     nav a {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 25px;
+      color: #fdc103;
     }
   }
   
@@ -233,6 +247,25 @@
 
     .hero_content{
         width: 90%;
+        margin-top: -60px;
     }
+
+    .hero_heading_1 h1{
+        font-size: 30px;
+    }
+
+    .hero_heading_2 h1{
+        font-size: 60px;
+    }
+
+    .hero_heading_3 h1{
+        font-size: 40px;
+    }
+
+    .hero_heading_4 p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
   }
   
