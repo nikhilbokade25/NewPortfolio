@@ -97,6 +97,7 @@
     height: auto;
 }
 
+
 .boostr_title {
     font-size: 60px;
     margin-bottom: 1rem;
@@ -105,6 +106,22 @@
     text-align: left;
     margin-top: 30px;
 }
+
+.boostr_heading_row {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between icon and heading */
+  }
+  
+  .boostr_heading_row img {
+    width: 60px;
+    height: auto;
+  }
+  
+  .boostr_heading_row h1 {
+    margin: 0;
+    font-size: 40px;
+  }
 
 .boostr_division p{
     text-align: left;
@@ -188,7 +205,17 @@
     }
 
     .boostr_title {
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
     }
+
+    .boostr_heading_row {
+        justify-content: center;
+        flex-wrap: nowrap;
+        text-align: center;
+      }
+      
+      .boostr_heading_row h1 {
+        font-size: 27px;
+      }
 }

@@ -3,6 +3,9 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './About.css';
 
+import About1Img from "../Assets/about1Img.png";
+import About2Img from "../Assets/about2Img.png";
+import About3Img from "../Assets/about3Img.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -36,7 +39,7 @@ export default function About() {
                 }
             });
         } else {
-            // Remove transform for mobile so it doesn't keep the div stuck
+            
             gsap.set(description, { clearProps: "all" });
         }
 
@@ -62,7 +65,10 @@ export default function About() {
 
                             <div className="boostr_division">
                                 <div className="boostr_heading">
+                                <div className="boostr_heading_row">
+                                    <img src={About1Img} alt="Precision Icon" />
                                     <h1>Precision in the Details</h1>
+                                </div>
                                     <p>Every pixel has a purpose. I thrive on building intuitive interfaces where alignment, spacing, and motion come together seamlessly. Whether it’s refining design tokens or creating consistent components, I’m committed to making UI systems that are both scalable and beautiful.</p>
                                 </div>
                                 
@@ -70,7 +76,11 @@ export default function About() {
 
                             <div className="boostr_division">
                                 <div className="boostr_heading">
-                                <h1>Balancing Vision & Value</h1>
+                                    <div className='boostr_heading_row'>
+                                        <img src={About2Img} alt="Vision & Value Icon" />
+                                        <h1>Balancing Vision & Value</h1>
+                                    </div>
+                              
                                 <p>Great design solves real problems. I focus on aligning user needs with business goals pushing creativity without losing sight of practicality. Knowing when to innovate and when to simplify is what helps me ship work that matters.</p>
                                     
                                 </div>
@@ -79,7 +89,11 @@ export default function About() {
 
                             <div className="boostr_division">
                                 <div className="boostr_heading">
-                                <h1>Code-Savvy Creative</h1>
+                                    <div className='boostr_heading_row'>
+                                        <img src={About3Img} alt="Code-Savvy Creative" />
+                                        <h1>Code-Savvy Creative</h1>
+                                    </div>
+                            
                                 <p>To me, front-end development isn't just execution it's expression. Understanding code allows me to prototype fast, collaborate better with developers, and ensure my designs are grounded in what’s possible on the web.</p>
                                     
                                 </div>
