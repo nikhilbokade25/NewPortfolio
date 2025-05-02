@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/NewPortfolio/static/css/main.e541cf1a.css",
+    "main.js": "/NewPortfolio/static/js/main.db0c396a.js",
+    "static/js/453.e9474479.chunk.js": "/NewPortfolio/static/js/453.e9474479.chunk.js",
+    "static/media/MaxVerstappen.mp4": "/NewPortfolio/static/media/MaxVerstappen.cdda309355fb5a0bcd73.mp4",
+    "static/media/TheFryShack.mp4": "/NewPortfolio/static/media/TheFryShack.c126221a5a3bb12a0be9.mp4",
+    "static/media/BoostrVideo.mp4": "/NewPortfolio/static/media/BoostrVideo.14d1280582da91549a3b.mp4",
+    "static/media/about1Img.png": "/NewPortfolio/static/media/about1Img.8dc7fcf28a5b7d026173.png",
+    "static/media/about2Img.png": "/NewPortfolio/static/media/about2Img.852e29fb394dfb6b3947.png",
+    "index.html": "/NewPortfolio/index.html",
+    "main.e541cf1a.css.map": "/NewPortfolio/static/css/main.e541cf1a.css.map",
+    "main.db0c396a.js.map": "/NewPortfolio/static/js/main.db0c396a.js.map",
+    "453.e9474479.chunk.js.map": "/NewPortfolio/static/js/453.e9474479.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e541cf1a.css",
+    "static/js/main.db0c396a.js"
+  ]
+}
