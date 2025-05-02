@@ -56,7 +56,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="horizontal_container" ref={containerRef}>
+    <div className="horizontal_container" ref={containerRef} id="work">
       <div className="horizontal_sections" ref={sectionsRef}>
 
         <div className="section one">
@@ -76,7 +76,9 @@ export default function Projects() {
                         <p>
                         A sleek and modern website web experience for a fast food restaurant. Built with ReactJS and styled for responsiveness, the site features smooth GSAP-powered animations to enhance user engagement. 
                         </p>
-                        <button className="demo_btn">Live Demo</button>
+                        <button className="demo_btn"
+                        onClick={() => window.open('https://nikhilbokade25.github.io/TheFryShack/', '_blank', 'noopener,noreferrer')}
+                        >Visit Site</button>
                     </div>
                     
                 </div>
@@ -103,7 +105,9 @@ export default function Projects() {
                     <p>
                     A bold and high-energy website designed for Boostr, a conceptual energy drink brand. Developed using ReactJS with smooth GSAP animations, the site delivers a fast-paced, visually striking user experience that reflects the brand’s energetic identity. 
                     </p>
-                    <button className="demo_btn">Live Demo</button>
+                    <button className="demo_btn"
+                    onClick={() => window.open('https://nikhilbokade25.github.io/BoostrEnergyDrink/', '_blank', 'noopener,noreferrer')}
+                    >Visit Site</button>
                     </div>
                     
                 </div>
@@ -130,7 +134,9 @@ export default function Projects() {
                         <p>
                         A sleek and adrenaline-fueled tribute site dedicated to Formula 1 champion Max Verstappen. Built with ReactJS and animated using GSAP, the site captures the thrill of racing through dynamic scroll interactions, high-impact visuals, and smooth transitions. 
                         </p>
-                        <button className="demo_btn">Live Demo</button>
+                        <button className="demo_btn"
+                        onClick={() => window.open('https://nikhilbokade25.github.io/MaxVerstappen/', '_blank', 'noopener,noreferrer')}
+                        >Visit Site</button>
                         </div>
                         
                     </div>

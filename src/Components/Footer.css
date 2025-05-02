@@ -1,0 +1,87 @@
+.footer_container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3efe5; 
+}
+
+.footer_text {
+    width: 90%;
+    height: 80%;
+}
+
+.footer_text h1 {
+    font-size: 80px;
+    text-align: left;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.footer_text a.footer_link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer_text a.footer_link:hover {
+    color: #005570; /* Change to your desired hover color */
+}
+
+.footer_socials {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_socials ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer_socials ul li a,
+.footer_socials ul li button {
+    font-size: 18px;
+    color: #005570;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer_socials ul li a:hover,
+.footer_socials ul li button:hover {
+    color: #f2a900; /* Desired hover color */
+}
+
+.footer_socials ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer_container{
+        height: auto;
+    }
+    .footer_text h1 {
+        font-size: 50px;  
+        text-align: center;  
+    }
+
+    .footer_socials ul {
+        flex-direction: column;  
+        gap: 15px;  
+    }
+
+    .footer_socials ul li a,
+    .footer_socials ul li button {
+        font-size: 16px;  
+    }
+}

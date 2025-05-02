@@ -34,6 +34,10 @@
     text-align: left;
 }
 
+.boostr_image span{
+    font-family: "Rochester", cursive;
+}
+
 .boostr_image h2 {
     font-size: 100px;
     color: #005570;
@@ -86,10 +90,11 @@
 }
 
 .boostr_heading h1 {
-    font-size: 50px;
+    font-size: 75px;
     margin: 0;
     color: #005570;
     text-align: left;
+    font-family: "Rochester", cursive;
 }
 
 .boostr_heading img {
@@ -120,7 +125,7 @@
   
   .boostr_heading_row h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
   }
 
 .boostr_division p{
@@ -216,6 +221,6 @@
       }
       
       .boostr_heading_row h1 {
-        font-size: 27px;
+        font-size: 34px;
       }
 }

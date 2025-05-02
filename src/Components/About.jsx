@@ -49,11 +49,11 @@ export default function About() {
     }, []);
 
     return (
-        <div className="boostr_wrapper">
+        <div className="boostr_wrapper" id='about'>
             <div className="boostr_container" ref={containerRef}>
                 <div className="boostr_content">
                     <div className="boostr_image">
-                        <h2>My Journey Into Impactful Front-End Experiences</h2>
+                        <h2>My <span>Journey</span> Into Impactful <br/><span>Front-End</span> Experiences</h2>
                     </div>
                     <div className="boostr_description">
                         <div className="boostr_inner" ref={descRef}>
